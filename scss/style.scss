@@ -1,0 +1,117 @@
+* {
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+body{
+   background-color: #000;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0 16px;
+   box-sizing: content-box;
+}
+.items-box {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   margin-top: 30px;
+}
+.item {
+   background-color: #fff;
+   width: 300px;
+   height: 600px;
+   padding: 24px;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+		&__top {
+         display: flex;
+         justify-content: center;
+         gap: 30px;
+         flex-direction: column;
+		}
+
+		&__title-box {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         gap: 8px;
+		}
+
+		&__title {
+         font-weight: 700;
+         font-size: 28px;
+         color: #000;
+		}
+
+		&__suptitle {
+         font-weight: 400;
+         font-size: 18px;
+         color: grey;
+		}
+
+		&__price {
+         font-weight: 700;
+         font-size: 28px;
+         color: #000;
+		}
+
+		&__hr {
+         margin:  -20px 0  0;
+		}
+
+		&__advan {
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         flex-direction: column;
+         gap: 10px;
+		}
+
+		&__el {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+		}
+
+		&__btn {
+         padding:  15px 30px;
+         background-color: blue;
+         color: #fff;
+         font-weight: 500;
+         font-size: 21px;
+         border: 0;
+         width: 100%;
+		}
+}
+.el {
+		&__text {
+         font-weight: 400;
+         font-size: 18px;
+         color: grey;
+		}
+      &__icon{
+         cursor: pointer;
+         -webkit-user-select: none;
+         -khtml-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         -o-user-select: none;
+         user-select: none;
+      }
+}
+.true{
+   opacity: 1 !important;
+}
+.false{
+   opacity: 0 !important;
+}
